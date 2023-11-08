@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Nunito:wght@300&family=Poppins:wght@300&display=swap');
+body{
+    background-color: #081b29;
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #ededed;
+
+}
+/*Content of the entire work*/
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+.navbar{
+    margin-right: 20%;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: all 0.3s;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: #00abf0;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    width: 800px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 0px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    line-height: 50px;
+}
+.home-content p{
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn-box a{
+    position: relative;
+    color: #00abf0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color:#081b29;
+}
+.btn-box a:nth-child(2):hover{
+    color: #00abf0;
+}
+.btn-box a:nth-child(1):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 0%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#00abf0;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.home-sci a:hover{
+    background-color: #00abf0;
+    color: #081b29;
+    transform: scale(1.3);
+    transform: translateY(-20px);
+}
+
+.footer{
+    position: absolute;
+    display: flex;
+    width: 81%;
+    background-color: transparent;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    margin-top: 40px;
+    vertical-align: middle;
+    text-align:center;
+    font-size: 20px;
+    color: #00abf0;
+}
+
+.picture-frame{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 30%;
+    height: 52%;
+    border: 5px solid #00abf0;
+    left: 892px;
+    top: 190px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    
+}
+
+.picture-frame p{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #00abf0;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    color: #081b29;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.profile-pic{
+    object-fit: cover;
+    width: 100%;
+    height: 99%;
+    opacity: 0.4;
+    transition: all 0.7s;
+}
+
+.profile-pic:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.picture-frame:hover{
+    opacity: 1;
+    cursor: pointer;
+    padding: 5px;
+    animation: wider 1s both normal infinite;
+}
+@keyframes wider{
+    from{transform: scale(0);}
+    to{transform: scale(1.15);}
+    from{transform: translateY(-10px);}
+    to{transform: translateY(-20px);}
+    from{width: 30%;}
+    to{width: 31%;}
+    from{height: 50%;}
+    to{height: 51%;}
+    from{transform: rotateZ(1deg);}
+    to{transform: rotateZ(-1deg);}
+    from{padding: 0px;}
+    from{padding: 0px 0px 10px 0px;}
+}
+.picture-frame:hover.picture-frame p{
+    opacity: 1;
+    transform: translateX(40px) translateY(-40px);
+} 
