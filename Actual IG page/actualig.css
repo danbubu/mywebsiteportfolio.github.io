@@ -89,7 +89,7 @@ button:focus{
 }
 /*facebook logo*/
 .facebooklogo{
-    display: block;
+    vertical-align: middle;
     width: 18px;
     height: 18px;
 }
@@ -101,6 +101,7 @@ button:focus{
     
 }
 .fbtext{
+    vertical-align: middle;
     margin-top: -3px;
     margin-left: 7px;
     color:#385185;
