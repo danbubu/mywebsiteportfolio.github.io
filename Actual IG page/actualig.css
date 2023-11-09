@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-size: 180%;
+background-position: -200px 0px;
+}
+/*Container for the IG form up to "Forgotten your password?"*/
+.main{
+    align-items: center;
+    margin: 15px auto;
+    height: 450px;
+    width: 380px;
+    border: 1px solid #dfdcdcb6; 
+    border-radius: 1px;
+}
+/*IG logo position*/
+.igLogo{
+    display: flex;
+    width: 60%;
+    margin:35px auto;
+    margin-top: 40px;
+    
+}
+/*Input field positioning*/
+.login{
+    text-decoration: none;
+    outline-color: #1a181854;
+    color: #111111;
+    border: 1px solid #dfdcdcb6;
+    border-radius: 3px;
+    align-items: center;
+    padding-left: 20px;
+    width: 1%;
+    display: flex;
+    height: 3.0em;
+    font-size: 0.85rem;
+    background-color: #FAFAFA;
+    min-width: 300px;
+    margin: 10px auto;
+    
+}
+input:focus{
+    outline: 0.1px solid #00000079;
+   
+}
+button:focus{
+    background-color: rgba(52, 172, 252, 0.7);
+}
+.loginbutton{
+    text-decoration: none;
+    display: flex;
+    margin: 15px auto;
+    height: 2.50em;
+    min-width: 320px;
+    background-color: rgba(0, 149, 246, 0.7);
+    color:#FAFAFA;
+    border: none;
+    border-radius: 10px;
+    font-size: medium;
+    justify-content: center;
+    padding-top: 10px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    transition: padding 0.15s;
+}
+.login1{
+    text-decoration: none;
+}
+
+
+.or{
+    color: #828282;
+    font-family: sans-serif;
+    width: 83%; 
+   text-align: center; 
+   border-bottom: 1px solid #bbb6b665; 
+   line-height: 0.1em;
+   margin: 15px 0 30px 33px;
+   margin-top: 25px;
+   font-weight: bold;
+}
+.or span{
+    background:#fff; 
+    padding:11px 20px;
+    padding-top: 10px; 
+    
+}
+/*facebook logo*/
+.facebooklogo{
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+.facebook{
+    display: block;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+.fbtext{
+    margin-top: -3px;
+    margin-left: 7px;
+    color:#385185;
+    font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight:600;
+}
+.forgotten{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    font-weight: 100;
+    color: #00376B;
+    font-size:14.8px;
+    letter-spacing: 0.2px;
+    font-family: calibri;
+    font-weight: 500;
+}
+.forgotten1{
+    text-decoration: none;
+}
+
+/*Container for the IG form up from "Don't have an account?"*/
+.submain{
+    display: flex;
+    align-items:flex-end;
+    margin: -5px auto;
+    height: 70px;
+    width: 380px;
+    border: 1px solid #dfdcdcb6;
+    border-radius: 1px;
+    vertical-align:middle;
+}
+.signUp{
+    color: #111111;
+    font-size:14.5px;
+    margin:auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.signup{
+    color: #0095F6;
+    letter-spacing: 0.1px;
+    text-decoration: none;
+    font-weight:600;
+    margin-left: 4px;
+    font-size: 14.1px;
+}
+.fblogin{
+    text-decoration: none;
+}
+/*Container for the IG form up from "Get the app & logos"*/
+.submainlogos{
+    align-items:flex-end;
+    margin: 15px auto;
+    height: 90px;
+    width: 380px;
+    border: none; 
+    border-radius: 1px;
+}
+
+.googlePlay{
+    width: 35%;
+    min-width:10%;
+    max-width: 50%;
+    height: auto;
+    margin: 1em auto;
+    margin-left: 50px;
+    margin-bottom: 150px;
+
+}
+
+
+.microsoft{
+    width: 35%;
+    min-width:10%;
+    max-width: 50%;
+    height: auto;
+    margin: 1em auto;
+    margin-right: 7px;   
+    padding-left: 10px;
+    height: 39px;
+    margin-bottom: 150px;
+}
+.get{
+ margin: 20px auto;
+ margin-left: 140px; 
+ margin-bottom: 5px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+#image {
+    transition: filter 0.3s; /* Add a smooth transition effect */
+}
+
+/* Styles for the image when clicked (active state) */
+#image:active {
+    filter: grayscale(100%); /* Change the image to grayscale when clicked */
+}
+/*Container for plenty headers and copyright*/
+.headers{
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    height: 120px;
+    width: 100%;
+    border: 1px solid #dfdcdcb6;
+    border-radius: 1px;
+    vertical-align: baseline;
+    border: none;
+    color: #828282;
+}
+.headers1{
+    text-decoration: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: auto;
+    display:block;
+    margin: 15px auto;
+    color: #828282;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+}
+.headers0{
+    text-align: center;
+text-decoration: none;
+color: #828282;
+}
+.wrap span{
+    text-align: center;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+select{
+    display: flex;
+    justify-self: flex-start;
+    
+    border: none;
+    border-radius: 1px; 
+    color: #828282;  
+    width: 100px;
+    
+}
+.headers11{
+    display:flex;
+    justify-self: flex-end;
+    color: #828282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    padding-left: 20px;
+    letter-spacing: 0.6px;
+}
+
+article{
+    margin-bottom: 20px;
+    display: inline-flex;
+    justify-content: center;
+}
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0px auto;
+}
+button:hover{
+    padding: 2px 15px 2px 15px;
+    cursor: pointer;
+}
+.fbtext:hover{
+    cursor: pointer;
+}
