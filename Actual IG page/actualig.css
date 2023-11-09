@@ -203,6 +203,7 @@ button:focus{
 }
 /*Container for plenty headers and copyright*/
 .headers{
+    
     display: grid;
     justify-content: center;
     justify-self: center;
@@ -216,6 +217,7 @@ button:focus{
     vertical-align: baseline;
     border: none;
     color: #828282;
+    line-height: 40px;
 }
 .headers1{
     text-decoration: center;
@@ -265,11 +267,12 @@ select{
 }
 
 article{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     display: inline-flex;
     justify-content: center;
 }
 h4{
+    padding-top: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin: 0px auto;
