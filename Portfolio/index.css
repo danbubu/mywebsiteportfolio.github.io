@@ -140,6 +140,9 @@ body{
     margin-left: 11%;
     padding-bottom: 1%;
 }
+.projects h2{
+    font-size: 100%;
+}
 .services{
     padding-top: 1%;
     background: #f1f0f07b;
