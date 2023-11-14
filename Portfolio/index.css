@@ -2,6 +2,7 @@
 
 /*Body content*/
 body{
+    background-color: #081b29;
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -14,7 +15,7 @@ body{
     flex: 1;
     width: 90%;
     margin: -6px 5% 0px 5%;
-    background: white;
+    background: #081b29;
     flex-direction: column;
 }
 
@@ -24,7 +25,7 @@ body{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: #0b90f7;
     width: 87%;
     padding: 2% 1% 2% 1%;
     box-shadow: 1px 0px 5px black;
@@ -36,24 +37,24 @@ body{
     font-size: 1.2rem;
     text-decoration: none;
     margin-left: 2rem;
-    color: black;
+    color: white;
     font-family: 'Poppins', sans-serif;
     transition: .3s;
 }
 .header a:not(.logo):hover{
-    color:#D80E0E;
+    color:#081b29;
 }
 .contact{
     margin-right: 2rem;
 }
 .red-letter{
-    color: #D80E0E;
+    color: #081b29;
 }
 
 /*The rest of the content below the header*/
 .actual-content{
     position: relative;
-    background: white;
+    background: #081b29;
     margin-top: 7%;
     display: flex;
     flex-direction: column;
@@ -62,14 +63,23 @@ body{
     padding-bottom: 10%;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     font-size: larger;
     font-family: 'Poppins', sans-serif;
 }
+.services{
+    padding-top: 1%;
+    width: 80%;
+    margin-left: 11%;
+    padding-bottom: 1%;
+}
 
 .home{padding-bottom: 5%;
-    border-bottom: 1px solid #8e8d8d;
-    background: #f1f0f07b;
+    
+}
+.front{
+    color: #00abf0;
+    margin-left: 10%;
 }
 .home1{padding-bottom: 5%;
     width: 90%;
@@ -91,11 +101,13 @@ body{
     padding-right: 2rem;
 }
 .profile1-info h2{
+    color: #00abf0;
     text-align: center;
     text-decoration: none;
     margin-left: 10%;
 }
 .profile1-info p{
+    
     margin-top: 5%;
     vertical-align: middle;
     width: 80%;
@@ -109,21 +121,20 @@ body{
 .profile-image{
     flex: 2;
     display: inline-block;
-    border: 4px solid #D80E0E;
+    border: 4px solid #00abf0;
     border-radius: 15px;
     height: 22rem;
     margin-top: 4%;
     width: 2rem;
-    object-fit:contain;
-    object-position: 80% 5%;
-    background-image: url(Gallery/background6.png);
+    object-fit:cover;
+    object-position: 100% 90%;
     animation: wider 1s both normal infinite;
     
 }
 .profile-image1{
     flex: 5;
     display: inline-block;
-    border: 4px solid #D80E0E;
+    border: 4px solid #00abf0;
     border-radius: 15px;
     height: 22rem;
     margin-top: 10%;
@@ -140,28 +151,30 @@ body{
     margin-left: 11%;
     padding-bottom: 1%;
 }
-.services{
-    padding-top: 1%;
-    background: #f1f0f07b;
-    width: 80%;
-    margin-left: 11%;
-    padding-bottom: 1%;
-    border-bottom: 1px solid #8e8d8d;
+.projects h2{
+    color: #00abf0;
+    font-size: 130%;
 }
+.projects h5{
+    font-size: 1.2rem;
+}
+
 .contacts{
-    padding-top: 1%;
-    background: #f1f0f07b;
+    padding-top: 0.5%;
     width: 80%;
     margin-left: 11%;
     margin-top: 5%;
-    padding-bottom: 10%;
-    border-bottom: 1px solid #8e8d8d;
+    padding-bottom: 11%;
+}
+.contacts h3{
+    color: #00abf0;
 }
 .contacts h3, h4{
-    margin-left: 20%;
+    text-align: center;
+    line-height: 170%;
 }
 .bullets{
-    color:#D80E0E;
+    color:#00abf0;
     position: absolute;
     animation: bullet 1s both normal infinite;
     font-size: 20px;
@@ -169,29 +182,35 @@ body{
 }
 .fa-phone{
     position: absolute;
-    color: green;
+    color: #00abf0;
     font-size: 100%;
     cursor: pointer;
     animation: shake 1s both normal infinite;
 }
 .diamond{
-    color: green;
+    color: #00abf0;
 }
 .contact-content{
+    justify-items: center;
+    justify-self: center;
+    text-align:start;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex: 1;
     justify-content: center;
+    flex: 1;
+    margin-bottom: -15%;
+    width: 100%;
 }
 .telephone, .e-mail{
-    margin-left: 3rem;
-    width: 20%;
-    height: 4rem;
+    justify-content: center;
+    width: 25%;
+    height: 3.5rem;
+    
 }
+
 .phone{
     object-fit: scale-down;
-    width: 25%;
+    width: 20%;
     display: inline-block;
     vertical-align: middle;
     animation-name: shake1;
@@ -202,17 +221,18 @@ body{
 }
 /*KEyframe involved*/
 @keyframes shake1{
-    from{transform: rotateZ(4deg);}
-    to{transform: rotateZ(-4deg);}
+    from{transform: rotateZ(1deg);}
+    to{transform: rotateZ(-1deg);}
 }
 .contact-info{
     display: inline-block;
     vertical-align: middle;
     margin-left: 1rem;
+    
 }
 .phone2{
     object-fit: scale-down;
-    width: 25%;
+    width: 20%;
     display: inline-block;
     vertical-align: middle;
     transition: 0.5s;
@@ -227,25 +247,11 @@ body{
 .contact-info2{
     display: inline-block;
     vertical-align: middle;
-    margin-left: 0.1rem;
-    font-size: 0.8rem;
-}
-/*KEyframe involved*/
-@keyframes shake{
-    from{font-size: 10px;}
-    to{font-size: 20px;}
-    from{padding: 0px;}
-    to{padding: 0px 0px 0px 0px;}
-    from{margin: 0;}
-    to{margin: 0px 0px 10px 5px;}
+    margin-left: 1rem;
+    font-size: 1rem;
+    
 }
 
-@keyframes bullet{
-    from{font-size: 10px;}
-    to{font-size: 25px;}
-    from{padding: 0px;}
-    to{padding: 0px 0px 10px 0px;}
-}
 .ig-project{
     height: 20rem;
     padding: 15px;
@@ -269,7 +275,8 @@ body{
     padding: 15px;
 }
 .picture-info h4{
-    margin-right: 20%;
+    margin-top: 5%;
+   text-align: center;
 }
 .portfolio-picture{
     height: 80%;
@@ -302,6 +309,7 @@ body{
 }
 
 .services h2{
+    color: #00abf0;
     text-align: center;
     font-weight: 900;
 }
@@ -311,12 +319,12 @@ body{
     width: 80%;
 }
 .red-bullet{
-    color: #D80E0E;
+    color: #00abf0;
 }
 /*Animation time*/
 @keyframes wider{
     from{transform: scale(1);}
-    to{transform:scale(1.005)}
+    to{transform:scale(1.001)}
 }
 
 .profile-info h2{
@@ -331,7 +339,7 @@ body{
     text-wrap:wrap;
     font-size: 1.3rem;
     text-align: justify;
-    color: #8e8d8d;
+    color: white;
 }
 .fa-html5{
     color: #FF7F50;
@@ -346,8 +354,11 @@ body{
 .fa-linkedin,.fa-github{
     transition:all 0.5s;
 }
+.fa-github{
+    color:white
+}
 .fa-github:hover{
-    color: #171515;
+    color: #0b90f7;
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -357,7 +368,7 @@ body{
     transform: scale(1.1);
 }
 .fa-map-marker{
-    color: #D80E0E;
+    color: #00abf0;
     animation: location 0.8s both normal infinite;
 }
 
@@ -368,11 +379,12 @@ body{
 }
 .footer{
     font-size: 80%;
-    color: #D80E0E;
+    color: #00abf0;
     margin-top: 5%;
     margin-bottom: -8%;
     width: 100%;
     text-align: center;
+    margin-left: 1%;
 }
 
 /*ABOUT SECTION CONTENT*/
@@ -381,7 +393,7 @@ body{
 
 
 /*Exclusion for screen sizes*/
-@media (max-width: 1000px) and (min-width: 200px){
+@media (max-width: 1500px) and (min-width: 200px){
     .navbar{
         visibility: hidden;
     }
@@ -429,7 +441,7 @@ body{
     display: flex;
     
     align-self: center;
-    border: 2px solid #D80E0E;
+    border: 2px solid #00abf0;
     border-radius: 15px;
     height: 22rem;
     margin-top: 4%;
@@ -441,7 +453,7 @@ body{
     display: flex;
     margin-left: 10%;
     align-self: center;
-    border: 2px solid #D80E0E;
+    border: 2px solid #00abf0;
     border-radius: 15px;
     height: 22rem;
     margin-top: 8%;
