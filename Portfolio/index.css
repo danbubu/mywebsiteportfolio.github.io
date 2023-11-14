@@ -177,6 +177,7 @@ body{
     padding-right: 1rem;
     color:#00abf0;
     position: absolute;
+    animation: bullet 1s both normal infinite;
     font-size: 20px;
     transform: translateY(-0.2rem);
 }
@@ -189,6 +190,10 @@ body{
 }
 .diamond{
     color: #00abf0;
+}
+.fa-bullseye{
+    margin-left: -0.6rem;
+    transform: translateY(0.15rem);
 }
 .contact-content{
     justify-items: center;
