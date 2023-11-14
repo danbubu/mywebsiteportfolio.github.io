@@ -398,7 +398,7 @@ body{
 
 
 /*Exclusion for screen sizes*/
-@media (max-width: 1500px) and (min-width: 200px){
+@media (max-width: 1000px) and (min-width: 200px){
     .navbar{
         visibility: hidden;
     }
